@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol MainViewAction {
+    func didTapButton(_ sender: UIButton)
+}
+
 final class MainView: UIView {
     
     private let textView: UITextView = {
@@ -18,9 +22,12 @@ final class MainView: UIView {
     private let STTButton: UIButton = {
         let button = UIButton()
         button.setTitle("Start", for: .normal)
+        button.addTarget(self, action: #selector(didTapSTTButton(_:)), for: .touchUpInside)
         return button
     }()
     
+    var delegate: MainViewAction?
+        
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupUI()
@@ -52,11 +59,16 @@ extension MainView {
     private func setupSTTButton() {
         addSubview(STTButton)
         STTButton.translatesAutoresizingMaskIntoConstraints = false
-        
         [STTButton.centerXAnchor.constraint(equalTo: centerXAnchor),
          STTButton.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -30),
          STTButton.widthAnchor.constraint(equalToConstant: 120),
          STTButton.heightAnchor.constraint(equalToConstant: 40)]
             .forEach { $0.isActive = true }
+    }
+}
+
+extension MainView {
+    @objc private func didTapSTTButton(_ sender: UIButton) {
+        delegate?.didTapButton(sender)
     }
 }

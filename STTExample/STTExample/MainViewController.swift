@@ -32,8 +32,10 @@ extension MainViewController {
     }
     
     private func setupMainView() {
-        guard let mainView = mainView else { return }
+        guard let mainView = mainView as? MainView else { return }
         view.addSubview(mainView)
+        
+        mainView.delegate = self
         mainView.translatesAutoresizingMaskIntoConstraints = false
         
         [mainView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
@@ -44,3 +46,8 @@ extension MainViewController {
     }
 }
 
+extension MainViewController: MainViewAction {
+    func didTapButton(_ sender: UIButton) {
+
+    }
+}
