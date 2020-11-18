@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C22CB8E25653E7600E6093E /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C22CB8D25653E7600E6093E /* SpeechRecognizer.swift */; };
 		3C7AD252254FBC1900111E3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7AD251254FBC1900111E3C /* AppDelegate.swift */; };
-		3C7AD254254FBC1900111E3C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7AD253254FBC1900111E3C /* SceneDelegate.swift */; };
 		3C7AD256254FBC1900111E3C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7AD255254FBC1900111E3C /* MainViewController.swift */; };
 		3C7AD25B254FBC1900111E3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C7AD25A254FBC1900111E3C /* Assets.xcassets */; };
 		3C7AD25E254FBC1900111E3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C7AD25C254FBC1900111E3C /* LaunchScreen.storyboard */; };
@@ -35,9 +35,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3C22CB8D25653E7600E6093E /* SpeechRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = "<group>"; };
 		3C7AD24E254FBC1900111E3C /* STTExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = STTExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C7AD251254FBC1900111E3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3C7AD253254FBC1900111E3C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		3C7AD255254FBC1900111E3C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		3C7AD25A254FBC1900111E3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3C7AD25D254FBC1900111E3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -100,8 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				3C7AD251254FBC1900111E3C /* AppDelegate.swift */,
-				3C7AD253254FBC1900111E3C /* SceneDelegate.swift */,
 				3C7AD255254FBC1900111E3C /* MainViewController.swift */,
+				3C22CB8D25653E7600E6093E /* SpeechRecognizer.swift */,
 				3CF63DC3254FBF4800FCAE46 /* MainView.swift */,
 				3C7AD25A254FBC1900111E3C /* Assets.xcassets */,
 				3C7AD25C254FBC1900111E3C /* LaunchScreen.storyboard */,
@@ -258,9 +258,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C7AD256254FBC1900111E3C /* MainViewController.swift in Sources */,
+				3C22CB8E25653E7600E6093E /* SpeechRecognizer.swift in Sources */,
 				3CF63DC4254FBF4800FCAE46 /* MainView.swift in Sources */,
 				3C7AD252254FBC1900111E3C /* AppDelegate.swift in Sources */,
-				3C7AD254254FBC1900111E3C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
